@@ -89,3 +89,9 @@ const userAction=async()=>{
     await loadPage(curPageNo,repos);
 }
 userAction();
+window.setTimeout(()=>{
+        var loade=document.getElementsByClassName('loader')[0];
+        loade.style.display='none';
+        var nodes=document.getElementById('repos');
+        nodes.style.display='grid';
+    }, 3000);
